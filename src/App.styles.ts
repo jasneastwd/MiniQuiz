@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import BGImage from './images/sea.jpg';
+import BGImage from './images/background.jpg';
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     justify-content: center;
   }
   * {
-    font-family: 'Catamaran', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
     box-sizing: border-box;
   }
 `;
@@ -29,10 +29,9 @@ export const Wrapper = styled.div`
   .score {
     color: #fff;
     font-size: 2rem;
-    margin: 0;
+    margin: 0.5rem, 0, 0.5rem, 0;
   }
   h1 {
-    font-family: Fascinate Inline;
     background-image: linear-gradient(180deg, #fff, #87f1ff);
     font-weight: 400;
     background-size: 100%;

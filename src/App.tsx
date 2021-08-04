@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { fetchQuizQuestions } from './API';
 // Components
 import QuestionCard from './components/QuestionCard';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 // types
 import { QuestionsState, Difficulty } from './API';
 // Styles
@@ -72,7 +74,7 @@ const App: React.FC = () => {
     <>
       <GlobalStyle />
       <Wrapper>
-        <h1>REACT QUIZ</h1>
+        <Navbar />
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
           <button className='start' onClick={startTrivia}>
             Start
@@ -99,6 +101,7 @@ const App: React.FC = () => {
           </button>
         ) : null}
       </Wrapper>
+      {/* <Footer /> */}
     </>
   );
 };
